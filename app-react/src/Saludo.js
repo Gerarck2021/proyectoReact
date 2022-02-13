@@ -9,3 +9,4 @@ function Saludo() {
 }
 
 // 3. exportamos la funcion
+export default Saludo;

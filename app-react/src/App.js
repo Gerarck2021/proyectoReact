@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Saludo from './Saludo';
 function App() {
   return (
     <div className="App">
@@ -17,6 +17,8 @@ function App() {
         >
           React is a big library more than you know!!!
         </a>
+        {/*Se usa el componente creado*/}
+        <Saludo />
       </header>
     </div>
   );
