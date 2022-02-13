@@ -1,24 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
-import Saludo from './Saludo';
+// import './App.css';
+// import Saludo from './Saludo';
+import TiraPeliculas from './components/TiraPeliculas';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React is a big library more than you know!!!
-        </a>
+        {/* Se usan los componentes creados */}
+        <h1>Listado de peliculas</h1>
+        <TiraPeliculas />
+        <TiraPeliculas />
         {/*Se usa el componente creado*/}
-        <Saludo />
+        {/* <Saludo /> */}
       </header>
     </div>
   );
