@@ -1,7 +1,7 @@
 import React from 'react';
 
 //depsues de instalado, importamos el prop types
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 //componente que tiene titulo y rating
 function Pelicula(props) {
     
@@ -31,8 +31,13 @@ function Pelicula(props) {
 }
 
 Pelicula.defaultProps = {
-    rating: "Esta pelicula aun no ha sido puntuada",
+    rating: 0.0,
     generos: null
+}
+
+Pelicula.propTypes = {
+    rating: PropTypes.number,
+    titulo: PropTypes.string
 }
 
 export default Pelicula;
